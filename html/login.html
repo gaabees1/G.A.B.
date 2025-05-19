@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G.A.B.</title>
+    <link rel="stylesheet" href="/css/cliente.css">
+    <link rel="shortcut icon" href="/img/icone.png" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <img style="width: 200px;" src="/img/logoNovo.png" alt="">
+        <div class="header-right">
+            <a href="/html/cliente.html">Crie uma Conta</a>
+            <a href="/html/login.html">Entrar</a>
+            <a href="/html/index.html">Voltar á página principal</a>
+            <!-- Ícone do menu hambúrguer -->
+            <a href="javascript:void(0);" class="menu-icon" onclick="toggleMenu()">☰</a>
+        </div>
+    </div>
+
+    <!-- Menu Hambúrguer -->
+    <div class="hamburger-menu">
+        <a href="#contact">Contato</a>
+        <a href="#about">Sobre Nós</a>
+    </div>
+    <br><br><br><br><br><br><br>
+    <center><div class="form-box">
+        <form class="form">
+            <span class="font2" class="title">Entre na sua conta</span>
+            <div class="form-container">
+              <input type="text" class="input" placeholder="Nome">
+                    <input type="email" class="input" placeholder="Email">
+                    <input type="password" class="input" placeholder="Senha">
+            </div>
+            <button>Entrar</button>
+        </form>
+        <div class="form-section">
+          <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Não tem uma conta? <a href="/html/cliente.html">Crie uma</a> </p>
+        </div>
+        </div></center>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+<script>
+    // Função para alternar o menu hambúrguer
+    function toggleMenu() {
+        const menu = document.querySelector('.hamburger-menu');
+        menu.classList.toggle('open');  // Adiciona ou remove a classe 'open' para mostrar ou esconder o menu
+    }
+</script>
+</body>
+</html>
